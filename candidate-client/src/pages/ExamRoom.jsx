@@ -228,20 +228,30 @@ export default function ExamRoom() {
       </div>
 
       <div className="submit-bar">
-        <span style={{ marginLeft: 'auto', alignSelf: 'center', fontSize: 13, color: 'var(--text-dim)' }}>
-          Score so far: {totalScore} / {maxScore}
-        </span>
-        <button
-          className="btn btn-warn"
-          onClick={() => {
-            if (window.confirm('Submit the assessment now? You cannot make changes after this.')) {
-              doSubmit('manual');
-            }
-          }}
-        >
-          Submit assessment
-        </button>
-      </div>
+
+  <button
+    className="btn btn-warn"
+    onClick={() => {
+      if (window.confirm('Submit the assessment now? You cannot make changes after this.')) {
+        doSubmit('manual');
+      }
+    }}
+  >
+    Submit assessment
+  </button>
+
+  <span
+    style={{
+      marginLeft: 'auto',
+      alignSelf: 'center',
+      fontSize: 13,
+      color: 'var(--text-dim)'
+    }}
+  >
+    Score so far: {totalScore} / {maxScore}
+  </span>
+
+</div>
     </div>
   );
 }
