@@ -228,7 +228,7 @@ export default function ExamRoom() {
       </div>
 
       <div className="submit-bar">
-        <span style={{ marginRight: 'auto', alignSelf: 'center', fontSize: 13, color: 'var(--text-dim)' }}>
+        <span style={{ marginLeft: 'auto', alignSelf: 'center', fontSize: 13, color: 'var(--text-dim)' }}>
           Score so far: {totalScore} / {maxScore}
         </span>
         <button

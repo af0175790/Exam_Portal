@@ -180,7 +180,7 @@ a { color: var(--accent); }
 
 .submit-bar {
   padding: 14px 20px; border-top: 1px solid var(--line); background: var(--paper-raised);
-  display: flex; justify-content: flex-end; gap: 12px;
+  display: flex; justify-content: flex-start; gap: 12px;
 }
 
 .center-msg { display: flex; align-items: center; justify-content: center; height: 100vh; font-family: var(--font-mono); color: var(--text-dim); }
